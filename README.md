@@ -10,12 +10,12 @@ pip install timm==0.3.2
 pip install einops
 ```
 
-# dataset
+# Dataset
 
 > https://drive.google.com/file/d/1qULO6dt0rjHTZcXP62FT4cqPq60XmkDe/view?usp=sharing
 
 
-# trian
+# Trian
 
 file tree
 ```
@@ -40,17 +40,17 @@ file tree
     └── train_image
 ```
 
-## pretrain
+## Pretrain
 
-use all the test data and train data to pretrain the model
+Use all the test data and train data(without labels) to pre-train the model
 ```
 cd UM-MAE
 make pretrain
 ```
 
-## 2 classes
+## Treat it as a 2-class classification problem
 
-Categorize the dataset into two categories, 0,1, with 0 representing normal data and 1 representing abnormal data.
+Categorize the dataset into two categories, 0,1, with 0 representing normal image data and 1 representing abnormal instance.
 then run the following code
 
 ```
@@ -62,9 +62,9 @@ make testc2
 ```
 
 
-## 8 classes
+## Treat it as an 8-class classification problem
 
-Categorize the dataset into 0-7, 8 classes, each representing one type of data, if the image has multiple defects, it will be placed into two classes of data
+Categorize the dataset into 0-7, in total 8 classes, each representing one type of data, if the image has multiple defects, it will be placed into multiple classes of data
 
 ```
 make finetunec8
@@ -75,9 +75,9 @@ make testc8
 ```
 
 
-## 9 classes
+## Treat it as a 9-class classification problem
 
-Categorize the dataset into 0-8, 9 categories, data with 2 defects will be placed in the ninth category
+Categorize the dataset into 0-8, 9 categories, data with each abnormal image instance (regardless of what type of anomaly is ) will be placed in the ninth category 
 
 ```
 make finetune9

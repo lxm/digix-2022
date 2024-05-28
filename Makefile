@@ -16,7 +16,7 @@ pretrain:
 		--warmup_epochs 40 \
 		--blr 1.5e-4 \
 		--weight_decay 0.05 \
-		--data_path ../huaweidata/pretrain-allimage \
+		--data_path /root/LXM/UM-MAE-ployloss/huaweidata/pretrain-allimage-256 \
 		--log_dir ./work_dirs/allimage/pretrain \
 		--output_dir ./work_dirs/allimage/pretrain
 

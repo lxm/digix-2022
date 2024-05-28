@@ -1,4 +1,4 @@
-# prepare environment
+# Prepare environment
 
 pytorch version: 1.8.1+cu111
 ```

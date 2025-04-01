@@ -16,7 +16,7 @@ pip install einops
 
 # Dataset
 
-> https://drive.google.com/file/d/1qULO6dt0rjHTZcXP62FT4cqPq60XmkDe/view?usp=sharing
+> https://github.com/lxm/digix-2022/blob/master/digix-data-resize.tar.gz  
 
 
 # Trian
